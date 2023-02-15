@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.happyhouse.mapper.QnaMapper">
+
+	<!-- 게시글 전체 조회 -->
+	<select id="selectQna" resultType="qnaDto">
+		select articleno, user_id, subject, content, hit, regtime
+		from Qna 
+		order by articleno desc
+	</select>
+	
+	<!-- 게시글 상세 조회 -->
+	<select id="selectQnaByNo" resultType="qnaDto">
+		select articleno, subject, user_id, content, hit, regtime
+		from Qna 
+		where articleno = #{articleno}
+	</select>
+
+	<!-- 게시글 등록 -->
+	<insert id="insertQna" parameterType="qnaDto">
+		insert into Qna(
+			subject, user_id, content
+		) values (
+			#{subject}, #{user_id}, #{content}
+		)
+	</insert>
+	
+	<!-- 게시글 수정 -->
+	<update id="updateQna" parameterType="qnaDto">
+		update Qna 
+		   set subject = #{subject}, 
+		   	   user_id = #{user_id}, 
+		   	   content = #{content}
+		 where articleno = #{articleno}
+	</update>
+
+	<!-- 게시글 삭제 -->
+	<delete id="deleteQna" parameterType="int">
+		delete 
+		from Qna 
+		where articleno = #{articleno}
+	</delete>
+	
+	<!-- 조회수 수정 -->
+	<update id="updateQnaCnt" parameterType="int">
+		update Qna 
+		   set hit = hit+1
+		 where articleno = #{articleno}
+	</update>
+
+</mapper>
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.happyhouse.mapper.MemberMapper">
+
+    <!-- 게시글 등록 -->
+	<insert id="regist" parameterType="memberDto">
+		insert into user(
+			user_id, user_password, user_name, user_email, joindate
+		) values (
+			#{user_id}, #{user_password}, #{user_name}, #{user_email}, now()
+		)
+	</insert>
+
+
+	<select id="login" parameterType="memberDto" resultType="memberDto">
+		select user_id, user_name, user_email
+		from user
+		where user_id = #{user_id} and user_password = #{user_password}
+	</select>
+	
+	<select id="userInfo" parameterType="String" resultType="memberDto">
+		select user_id, user_password, user_name, user_email, joindate
+		from user
+		where user_id = #{user_id}
+	</select>
+	
+	
+	<!-- 게시글 수정 -->
+	<update id="updateUser" parameterType="memberDto">
+		update user 
+		   set user_password = #{user_password}, 
+		   	   user_name = #{user_name}, 
+		   	   user_email = #{user_email}
+		 where user_id = #{user_id}
+	</update>
+
+	<!-- 게시글 삭제 -->
+	<delete id="deleteUser" parameterType="String">
+		delete 
+		from user 
+		where user_id = #{user_id}
+	</delete>
+	
+	
+	<select id="idCheck" parameterType="memberDto" resultType="memberDto">
+		select user_id
+		from user 
+		where user_id = #{user_id}
+	</select>
+	
+	<select id="isAdmin" parameterType="String" resultType="memberDto">
+		select user_id
+		from user 
+		where user_id = #{user_id} and user_id = 'admin'
+	</select>
+	
+	<select id="selectUser" resultType="memberDto">
+		select user_id, user_password, user_name, user_email, joindate
+		from user 
+		order by user_id desc
+	</select>
+</mapper>
