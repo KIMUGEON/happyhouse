@@ -1,3 +1,5 @@
+<img src="https://user-images.githubusercontent.com/55612264/219234046-208af783-d573-43cb-a61b-611c10251184.jpg"/>
+
 # HappyHouse
 - 진행 기간 : 2022.05.19 ~ 2022.05.26 (1주간) <br/>
 - 서비스 명 : HappyHouse (공공데이터 API를 활용한 부동산 실거래가 조회 서비스)
