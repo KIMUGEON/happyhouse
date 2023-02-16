@@ -101,3 +101,10 @@
 <br>
 <img src="https://user-images.githubusercontent.com/55612264/219228319-9ad0bf21-ecda-4da6-b59c-05806e737c0e.gif" width="80%"/>
 
+<br>
+
+##  산출물
+
+### [설계서](https://github.com/KIMUGEON/happyhouse/blob/7b2146f508e2f886b5556881f725995e67a265ef/%EC%84%A4%EA%B3%84%EC%84%9C.docx)
+### [시연영상](https://github.com/KIMUGEON/happyhouse/blob/7b2146f508e2f886b5556881f725995e67a265ef/%EC%8B%9C%EC%97%B0%EC%98%81%EC%83%81.mp4)
+### [최종 완료 보고서](https://github.com/KIMUGEON/happyhouse/blob/7b2146f508e2f886b5556881f725995e67a265ef/%EC%B5%9C%EC%A2%85%20%EC%99%84%EB%A3%8C%20%EB%B3%B4%EA%B3%A0%EC%84%9C.pptx)
