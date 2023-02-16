@@ -7,7 +7,7 @@
 ```
   SSAFY 7기_관통프로젝트 광주 4반(12조)
 ```
-|<img src="https://postfiles.pstatic.net/MjAyMjExMjVfMTIy/MDAxNjY5MzQxODUzMjkw.-QTEbQWvauzLaeFHVXWeSYJyyVkKcNOFRAzeprbHC4Qg.NuH49BbO683PmPl8X9HE-Pf-oEI5L1zPCbxixNxqtTAg.JPEG.junwu19/KakaoTalk_Photo_2022-11-21-11-28-13.jpeg?type=w966" width="150" height="180"/> | |
+|<img src="https://postfiles.pstatic.net/MjAyMjExMjVfMTIy/MDAxNjY5MzQxODUzMjkw.-QTEbQWvauzLaeFHVXWeSYJyyVkKcNOFRAzeprbHC4Qg.NuH49BbO683PmPl8X9HE-Pf-oEI5L1zPCbxixNxqtTAg.JPEG.junwu19/KakaoTalk_Photo_2022-11-21-11-28-13.jpeg?type=w966" width="150" height="180"/> | <img src="https://user-images.githubusercontent.com/55612264/219229853-20eab2e7-365a-4979-82d2-cc7461f56d8c.png" width="150" height="180"/> |
 |-|-|
 | 김우건(팀장)|최영현(팀원)|
 
